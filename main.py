@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands
-import os
 from dotenv import load_dotenv
 import random
 import datetime
@@ -9,8 +8,8 @@ import pytz
 #set time zone to US Eastern
 est = pytz.timezone('America/New_York')
 
-#import bot token from .env file
-token= os.getenv('discord_bot_token')
+discord_bot_token= INSERT DISCORD BOT TOKEN HERE
+
 
 #cset up command prefix that bot will look for
 client = commands.Bot(command_prefix="#")
@@ -95,4 +94,4 @@ async def on_command_error(ctx,error):
     await ctx.send("Command does not exist type #HELP or mention me to see all commands")
 
 
-client.run(token)
+client.run(discord_bot_token)
