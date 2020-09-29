@@ -11,7 +11,7 @@ est = pytz.timezone('America/New_York')
 discord_bot_token= INSERT DISCORD BOT TOKEN HERE
 
 
-#cset up command prefix that bot will look for
+#set up command prefix that bot will look for
 client = commands.Bot(command_prefix="#")
 
 @client.event
